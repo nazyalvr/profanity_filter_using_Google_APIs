@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Profanity filter</title>
+		<style>
+			body 
+			{
+				background-color: #ECE9E9;
+				color: #000000;
+				display: flex;
+    				align-items: center;
+     				justify-content: center;
+     				margin: 0 auto;
+     				height: 100vh;
+			}
+
+			.box
+			{	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<form action="http://127.0.0.1:5000/prof" method="GET">
+				<div>
+					<label for="URL">Audio URL</label>
+    					<input name="URL" value="https://" />
+				</div>
+  				<div>
+					<label for="lang">Language</label>
+    					<select name="lang" required>
+    						<option value="uk_UA">Ukrainian</option>
+    						<option value="en_US">English</option>
+    						<option value="ru_RU">Russian</option>
+					</select>
+				</div>
+  				<div>
+    					<button>Analyze</button>
+  				</div>
+			</form>
+		</div>
+	</body>
+</html>
